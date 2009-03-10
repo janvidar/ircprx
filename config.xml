@@ -1,0 +1,23 @@
+<ircprx>
+	<service bind="0.0.0.0" port="6666" ssl="false" sslcert="/etc/ssl/mycert.pem" />
+	<user id="janvidar" password="secret" />
+
+	<server host="irc.homelien.no" port="6667" ssl="false" autojoin="true">
+		<identity nick="Dj_Offset" ident="janvidar" fullname="Jan Vidar Krey" />
+		<channel name="#smiley" />
+		<channel name="#c++" />
+		<channel name="#alinux.no" />
+	</server>
+
+	<server host="irc.w3.org" port="6665" ssl="false" autojoin="true">
+		<identity nick="jvkrey" ident="janvidar" fullname="Jan Vidar Krey" />
+		<channel name="#wsc" />
+	</server>
+
+	<server host="irc.freenode.net" port="6667" ssl="false" autojoin="false">
+		<identity nick="jvkrey" ident="janvidar" fullname="Jan Vidar Krey" />
+		<channel name="#ircprx" />
+		<channel name="#kde" />
+		<channel name="#freedesktop-cafe" />
+	</server>
+</ircprx>
