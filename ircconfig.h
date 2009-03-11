@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2001-2009 Jan Vidar Krey, janvidar@extatic.org
+ * See the file "COPYING" for licensing details.
+ */
+
 #ifndef HAVE_IRC_CONFIG_H
 #define HAVE_IRC_CONFIG_H
 

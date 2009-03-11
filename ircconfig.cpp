@@ -1,5 +1,9 @@
-#include "ircconfig.h"
+/*
+ * Copyright (C) 2001-2009 Jan Vidar Krey, janvidar@extatic.org
+ * See the file "COPYING" for licensing details.
+ */
 
+#include "ircconfig.h"
 
 IRC::ServerChannelConfig::ServerChannelConfig(const std::string& chan, const std::string& pwd, bool aj) : channel(chan), password(pwd), autojoin(aj)
 {
