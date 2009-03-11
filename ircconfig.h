@@ -60,6 +60,17 @@ class ServerConfig
 		std::vector<ServerChannelConfig> channels;
 };
 
+class LocalConfig
+{
+	public:
+		LocalConfig();
+		virtual ~LocalConfig();
+
+	protected:
+		uint16_t port;
+		// TODO: SSL stuff
+};
+
 class Config
 {
 	public:
@@ -71,6 +82,7 @@ class Config
 		
 	protected:
 		std::vector<ServerConfig> servers;
+		LocalConfig local;
 };
 
 }
